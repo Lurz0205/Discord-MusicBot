@@ -5,12 +5,12 @@ const escapeMarkdown = require("discord.js").Util.escapeMarkdown;
 const command = new SlashCommand()
   .setName("play")
   .setDescription(
-    "Searches and plays the requested song \nSupports: \nYoutube, Spotify, Deezer, Apple Music"
+    "Tìm kiếm và phát bài hát được yêu cầu. \nHỗ trợ: \nYoutube, Spotify, Deezer, Apple Music"
   )
   .addStringOption((option) =>
     option
       .setName("query")
-      .setDescription("What am I looking for?")
+      .setDescription("Tìm kiếm gì đây nhỉ?")
       .setAutocomplete(true)
       .setRequired(true)
   )
@@ -23,7 +23,7 @@ const command = new SlashCommand()
     let node = await client.getLavalink(client);
     if (!node) {
       return interaction.reply({
-        embeds: [client.ErrorEmbed("Lavalink node is not connected")],
+        embeds: [client.ErrorEmbed("Lavalink chưa được kết nối")],
       });
     }
 
@@ -71,7 +71,7 @@ const command = new SlashCommand()
           embeds: [
             new MessageEmbed()
               .setColor("RED")
-              .setDescription("There was an error while searching"),
+              .setDescription("Ôi không, có một lỗi nào đó khi tớ đang tìm kiếm :<"),
           ],
         })
         .catch(this.warn);
@@ -86,7 +86,7 @@ const command = new SlashCommand()
           embeds: [
             new MessageEmbed()
               .setColor("RED")
-              .setDescription("No results were found"),
+              .setDescription("Tớ không tìm thấy"),
           ],
         })
         .catch(this.warn);
@@ -108,12 +108,12 @@ const command = new SlashCommand()
         .setURL(res.tracks[0].uri)
         .addFields(
           {
-            name: "Added by",
+            name: "Được thêm bởi",
             value: `<@${interaction.user.id}>`,
             inline: true,
           },
           {
-            name: "Duration",
+            name: "Thời lượng",
             value: res.tracks[0].isStream
               ? `\`LIVE 🔴 \``
               : `\`${client.ms(res.tracks[0].duration, {
