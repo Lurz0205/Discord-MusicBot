@@ -6,7 +6,7 @@ const command = new SlashCommand()
 	.setDescription("Chỉnh âm lượng của bài hát hiện tại..")
 	.addNumberOption((option) =>
 		option
-			.setName("giá trị")
+			.setName("amount")
 			.setDescription("Nhập giá trị âm lượng mà cậu muốn chỉnh. VD:10")
 			.setRequired(false),
 	)
