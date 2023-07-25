@@ -4,7 +4,7 @@ const SlashCommand = require("../../lib/SlashCommand");
 
 const command = new SlashCommand()
 	.setName("247")
-	.setDescription("Prevents the bot from ever disconnecting from a VC (toggle)")
+	.setDescription("Tớ sẽ không rời khỏi kênh Voice Chat nữa")
 	.setRun(async (client, interaction, options) => {
 		let channel = await client.getChannel(client, interaction);
 		if (!channel) {
@@ -29,7 +29,7 @@ const command = new SlashCommand()
 				embeds: [
 					new MessageEmbed()
 						.setColor("RED")
-						.setDescription("There's nothing to play 24/7."),
+						.setDescription("Hiện tại tớ đang không phát bài nào cả, không thể bật 247 được."),
 				],
 				ephemeral: true,
 			});
@@ -46,9 +46,9 @@ const command = new SlashCommand()
 			player.set("twentyFourSeven", false);
 		}
 		twentyFourSevenEmbed
-		  .setDescription(`**24/7 mode is** \`${!twentyFourSeven ? "ON" : "OFF"}\``)
+		  .setDescription(`**Chế độ 24/7 đang** \`${!twentyFourSeven ? "BẬT" : "TẮT"}\``)
 		  .setFooter({
-		    text: `The bot will ${!twentyFourSeven ? "now" : "no longer"} stay connected to the voice channel 24/7.`
+		    text: `Tớ bây giờ ${!twentyFourSeven ? "sẽ" : "không còn"} giữ kết nối với kênh Voice Chat 24/7.`
       });
 		client.warn(
 			`Player: ${ player.options.guild } | [${ colors.blue(
