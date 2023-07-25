@@ -4,7 +4,7 @@ const SlashCommand = require("../../lib/SlashCommand");
 
 const command = new SlashCommand()
 	.setName("247")
-	.setDescription("Tớ sẽ không rời khỏi kênh Voice Chat nữa")
+	.setDescription("Giữ bot không rời khỏi kênh thoại khi không còn ai hoạt động.")
 	.setRun(async (client, interaction, options) => {
 		let channel = await client.getChannel(client, interaction);
 		if (!channel) {
