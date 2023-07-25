@@ -37,7 +37,7 @@ module.exports = {
 	embedColor: "#2f3136", //- Color of the embeds, hex supported
 	presence: {
 		// PresenceData object | https://discord.js.org/#/docs/main/stable/typedef/PresenceData
-		status: "dnd", //- You can have online, idle, dnd and invisible (Note: invisible makes people think the bot is offline)
+		status: "online", //- You can have online, idle, dnd and invisible (Note: invisible makes people think the bot is offline)
 		activities: [
 			{
 				name: "ÂM NHẠC", //- Status Text
