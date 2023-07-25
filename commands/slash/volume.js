@@ -3,11 +3,11 @@ const { MessageEmbed } = require("discord.js");
 
 const command = new SlashCommand()
 	.setName("volume")
-	.setDescription("Change the volume of the current song.")
+	.setDescription("Chỉnh âm lượng của bài hát hiện tại..")
 	.addNumberOption((option) =>
 		option
-			.setName("amount")
-			.setDescription("Amount of volume you want to change. Ex: 10")
+			.setName("giá trị")
+			.setDescription("Nhập giá trị âm lượng mà cậu muốn chỉnh. VD:10")
 			.setRequired(false),
 	)
 	.setRun(async (client, interaction) => {
@@ -47,7 +47,7 @@ const command = new SlashCommand()
 					new MessageEmbed()
 						.setColor(client.config.embedColor)
 						.setDescription(
-							`:loud_sound: | Current volume **${ player.volume }**`,
+							`:loud_sound: | Âm lượng hiện tại **${ player.volume }**`,
 						),
 				],
 			});
@@ -59,7 +59,7 @@ const command = new SlashCommand()
 				new MessageEmbed()
 					.setColor(client.config.embedColor)
 					.setDescription(
-						`:loud_sound: | Successfully set volume to **${ player.volume }**`,
+						`:loud_sound: | Đã chỉnh âm lượng thành **${ player.volume }**`,
 					),
 			],
 		});
