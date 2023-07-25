@@ -14,7 +14,7 @@ module.exports = {
 	Issues: "https://nxhbtbuh.blogspot.com", //- Bug Report Link
 	permissions: 8, //- Bot Inviting Permissions
 	disconnectTime: 1, //- How long should the bot wait before disconnecting from the voice channel (in miliseconds). Set to 1 for instant disconnect.
-	twentyFourSeven: true, //- When set to true, the bot will never disconnect from the voice channel
+	twentyFourSeven: false, //- When set to true, the bot will never disconnect from the voice channel
 	autoQueue: false, //- When set to true, related songs will automatically be added to the queue
 	autoPause: true, //- When set to true, music will automatically be paused if everyone leaves the voice channel
 	autoLeave: false, //- When set to true, the bot will automatically leave when no one is in the voice channel (can be combined with 24/7 to always be in voice channel until everyone leaves; if 24/7 is on disconnectTime will add a disconnect delay after everyone leaves.)
@@ -40,8 +40,8 @@ module.exports = {
 		status: "online", //- You can have online, idle, dnd and invisible (Note: invisible makes people think the bot is offline)
 		activities: [
 			{
-				name: "HoangThaiBao", //- Status Text
-				type: "WATCHING", //- PLAYING, WATCHING, LISTENING, STREAMING
+				name: "**ÂM NHẠC**", //- Status Text
+				type: "STREAMING", //- PLAYING, WATCHING, LISTENING, STREAMING
 			},
 		],
 	},
