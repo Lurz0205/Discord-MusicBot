@@ -26,12 +26,12 @@ module.exports = {
 	nodes: [
 		{
 			identifier: "Main Node", //- Used for indentifier in stats commands.
-			host: "lavalink.devamop.in", //- The host name or IP of the lavalink server.
-			port: 443, // The port that lavalink is listening to. This must be a number!
-			password: "DevamOP", //- The password of the lavalink server.
+			host: "141.95.90.1", //- The host name or IP of the lavalink server.
+			port: 88, // The port that lavalink is listening to. This must be a number!
+			password: "youshallnotpass", //- The password of the lavalink server.
 			retryAmount: 200, //- The amount of times to retry connecting to the node if connection got dropped.
 			retryDelay: 40, //- Delay between reconnect attempts if connection is lost.
-			secure: true, //- Can be either true or false. Only use true if ssl is enabled!
+			secure: false, //- Can be either true or false. Only use true if ssl is enabled!
 		},
 	],
 	embedColor: "#2f3136", //- Color of the embeds, hex supported
