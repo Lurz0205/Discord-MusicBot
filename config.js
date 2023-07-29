@@ -20,18 +20,18 @@ module.exports = {
 	autoLeave: false, //- When set to true, the bot will automatically leave when no one is in the voice channel (can be combined with 24/7 to always be in voice channel until everyone leaves; if 24/7 is on disconnectTime will add a disconnect delay after everyone leaves.)
 	debug: false, //- Debug mode
 	cookieSecret: "CodingWithSudhan is epic", //- Cookie Secret
-	website: "https://hinamusicv2.onrender.com", //- without the / at the end
+	website: "https://htbmusic.onrender.com", //- without the / at the end
 	// You need a lavalink server for this bot to work!!!!
 	// Lavalink server; public lavalink -> https://lavalink-list.darrennathanael.com/; create one yourself -> https://darrennathanael.com/post/how-to-lavalink
 	nodes: [
 		{
 			identifier: "Main Node", //- Used for indentifier in stats commands.
-			host: "141.95.90.1", //- The host name or IP of the lavalink server.
-			port: 88, // The port that lavalink is listening to. This must be a number!
-			password: "stonemusicgay", //- The password of the lavalink server.
+			host: "lavalink.devamop.in", //- The host name or IP of the lavalink server.
+			port: 443, // The port that lavalink is listening to. This must be a number!
+			password: "DevamOP", //- The password of the lavalink server.
 			retryAmount: 200, //- The amount of times to retry connecting to the node if connection got dropped.
 			retryDelay: 40, //- Delay between reconnect attempts if connection is lost.
-			secure: false, //- Can be either true or false. Only use true if ssl is enabled!
+			secure: true, //- Can be either true or false. Only use true if ssl is enabled!
 		},
 	],
 	embedColor: "#2f3136", //- Color of the embeds, hex supported
