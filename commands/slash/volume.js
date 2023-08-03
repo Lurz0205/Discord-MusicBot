@@ -3,7 +3,7 @@ const { MessageEmbed } = require("discord.js");
 
 const command = new SlashCommand()
 	.setName("volume")
-	.setDescription("Chỉnh âm lượng của bài hát hiện tại..")
+	.setDescription("Chỉnh âm lượng phát nhạc")
 	.addNumberOption((option) =>
 		option
 			.setName("amount")
