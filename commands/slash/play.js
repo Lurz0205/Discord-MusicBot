@@ -49,7 +49,7 @@ const command = new SlashCommand()
       embeds: [
         new MessageEmbed()
           .setColor(client.config.embedColor)
-          .setDescription(":mag_right: **Tớ đang tìm đây...**"),
+          .setDescription(":mag_right: **Đang tìm kiếm...**"),
       ],
       fetchReply: true,
     });
@@ -71,7 +71,7 @@ const command = new SlashCommand()
           embeds: [
             new MessageEmbed()
               .setColor("RED")
-              .setDescription("Ôi không, tớ không thể tìm vì một lỗi nào đó:<"),
+              .setDescription("Có một lỗi nào đó đã phát sinh"),
           ],
         })
         .catch(this.warn);
@@ -86,7 +86,7 @@ const command = new SlashCommand()
           embeds: [
             new MessageEmbed()
               .setColor("RED")
-              .setDescription("Tớ không tìm thấy"),
+              .setDescription("Không thể phát bài hát"),
           ],
         })
         .catch(this.warn);
