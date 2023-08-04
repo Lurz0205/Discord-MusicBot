@@ -38,7 +38,7 @@ const Home = (_props: any) => {
                 </Link>
                 <Link color='text' css={ {fontSize: '$lg', fontWeight: '$medium', marginLeft: '20px'} }
                       href='#features'>
-                    Features
+                    Tính năng
                 </Link>
                 <Button onClick={ () => window.location.pathname = '/dashboard' } css={ {marginLeft: 'auto'} } auto shadow>
                     Dashboard
@@ -54,12 +54,11 @@ const Home = (_props: any) => {
                 flexDirection: 'column',
             } }>
                 <Text h1 css={ {textGradient: "180deg, $blue600 -20%, $blue800 100%",} }>Discord Music Bot</Text>
-                <Text h3 css={ {color: '$gray800'} }>An advanced discord music bot, supports Spotify, SoundCloud,
-                    YouTube with Shuffling, Volume Control and Web Dashboard!</Text>
+                <Text h3 css={ {color: '$gray800'} }>Một BOT âm nhạc discord nâng cao, hỗ trợ Spotify, SoundCloud, YouTube và có Web Dashboard</Text>
                 <Container css={ {display: 'flex', alignItems: 'center', justifyContent: 'center'} }>
                     <Button color="primary" onClick={ () => window.location.pathname = '/login' } shadow style={ {
                         marginTop: '1rem'
-                    } }>Login
+                    } }>Đăng nhập
                     </Button>
                     <Button color="primary" flat
                             onClick={ () => window.open('https://github.com/SudhanPlayz/Discord-MusicBot') } style={ {
@@ -70,7 +69,7 @@ const Home = (_props: any) => {
                 </Container>
             </Container>
             <Container css={ {display: 'flex', flexDirection: 'column', alignItems: 'center', minHeight: '60vh'} }>
-                <Text h2>Features</Text>
+                <Text h2>Tính năng</Text>
                 <Container css={ {display: 'flex', justifyContent: 'center', flexWrap: 'wrap'} }>
                     <Card isHoverable css={ {
                         display: 'flex',
@@ -82,10 +81,10 @@ const Home = (_props: any) => {
                         textAlign: 'center'
                     } }>
                         <YouTube style={ {fontSize: '150px', color: '#3694FF'} }/>
-                        <Text h3>Spotify, Soundcloud, and Youtube support</Text>
+                        <Text h3>Hỗ trợ Spotify, Soundcloud và Youtube</Text>
                         <Text css={ {color: '$gray800'} }>
-                            Use your spotify playlist, youtube videos, youtube playlists
-                            and much more using this bot
+                            Sử dụng spotify playlist, youtube videos, youtube playlists
+                            của bạn và nhiều hơn nữa.
                         </Text>
                     </Card>
                     <Card isHoverable css={ {
@@ -98,9 +97,9 @@ const Home = (_props: any) => {
                         textAlign: 'center'
                     } }>
                         <AudiotrackRounded style={ {fontSize: '150px', color: '#3694FF'} }/>
-                        <Text h3>Lag-free Music</Text>
+                        <Text h3>No LAG</Text>
                         <Text css={ {color: '$gray800'} }>
-                            This bot will never lag when playing any song in a voice channel
+                            BOT sẽ không bao giờ LAG khi phát nhạc trong kênh thoại.
                         </Text>
                     </Card>
                     <Card isHoverable css={ {
@@ -113,10 +112,9 @@ const Home = (_props: any) => {
                         textAlign: 'center'
                     } }>
                         <SettingsRounded style={ {fontSize: '150px', color: '#3694FF'} }/>
-                        <Text h3>Server Settings</Text>
+                        <Text h3>Thiệt lập</Text>
                         <Text css={ {color: '$gray800'} }>
-                            Control your song looping song or queue, play or pause your song easily, or stop the bot
-                            completely.
+                            Dễ dàng điều khiển bài hát của bạn với nhiều lệnh ứng dụng.
                         </Text>
                     </Card>
                 </Container>
@@ -128,8 +126,8 @@ const Home = (_props: any) => {
                 alignItems: 'center',
                 minHeight: '60vh'
             } }>
-                <Text h2>What are you waiting for?</Text>
-                <Button shadow size={ 'md' } css={ {marginTop: '5em'} }>Start Now</Button>
+                <Text h2>Chần chừ gì nữa?</Text>
+                <Button shadow size={ 'md' } css={ {marginTop: '5em'} }>Bắt đầu ngay!</Button>
             </Container>
         </Container>
     )
