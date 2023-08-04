@@ -5,12 +5,12 @@ module.exports = {
 	token: process.env.token || "", //- Bot's Token
 	clientId: process.env.clientId || "", //- ID of the bot
 	clientSecret: process.env.clientSecret || "", //- Client Secret of the bot
-	port: 4200, //- Port of the API and Dashboard
+	port: 443, //- Port of the API and Dashboard
 	scopes: ["identify", "guilds", "applications.commands"], //- Discord OAuth2 Scopes
 	inviteScopes: ["bot", "applications.commands"], // Invite link scopes
 	serverDeafen: false, //- If you want bot to stay deafened
 	defaultVolume: 100, //- Sets the default volume of the bot, You can change this number anywhere from 1 to 100
-	supportServer: "https://discord.gg/sbySMS7m3v", //- Support Server Link
+	supportServer: "https://discord.gg/SGNYbb93KK", //- Support Server Link
 	Issues: "https://nxhbtbuh.blogspot.com", //- Bug Report Link
 	permissions: 8, //- Bot Inviting Permissions
 	disconnectTime: 1, //- How long should the bot wait before disconnecting from the voice channel (in miliseconds). Set to 1 for instant disconnect.
@@ -20,7 +20,7 @@ module.exports = {
 	autoLeave: false, //- When set to true, the bot will automatically leave when no one is in the voice channel (can be combined with 24/7 to always be in voice channel until everyone leaves; if 24/7 is on disconnectTime will add a disconnect delay after everyone leaves.)
 	debug: false, //- Debug mode
 	cookieSecret: "CodingWithSudhan is epic", //- Cookie Secret
-	website: "https://htbmusic.onrender.com", //- without the / at the end
+	website: "https://htbmusic-kt4m.onrender.com", //- without the / at the end
 	// You need a lavalink server for this bot to work!!!!
 	// Lavalink server; public lavalink -> https://lavalink-list.darrennathanael.com/; create one yourself -> https://darrennathanael.com/post/how-to-lavalink
 	nodes: [
