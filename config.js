@@ -13,7 +13,7 @@ module.exports = {
 	supportServer: "https://discord.gg/SGNYbb93KK", //- Support Server Link
 	Issues: "https://nxhbtbuh.blogspot.com", //- Bug Report Link
 	permissions: 8, //- Bot Inviting Permissions
-	disconnectTime: 1, //- How long should the bot wait before disconnecting from the voice channel (in miliseconds). Set to 1 for instant disconnect.
+	disconnectTime: 600000, //- How long should the bot wait before disconnecting from the voice channel (in miliseconds). Set to 1 for instant disconnect.
 	twentyFourSeven: false, //- When set to true, the bot will never disconnect from the voice channel
 	autoQueue: false, //- When set to true, related songs will automatically be added to the queue
 	autoPause: true, //- When set to true, music will automatically be paused if everyone leaves the voice channel
